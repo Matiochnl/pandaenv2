@@ -1,12 +1,8 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<hudson.plugins.emailext.ExtendedEmailPublisherDescriptor plugin="email-ext@2.75">
-  <defaultSuffix></defaultSuffix>
+<hudson.plugins.emailext.ExtendedEmailPublisherDescriptor plugin="email-ext@2.79">
   <mailAccount>
-    <address>adres jeszcze nie jest skonfigurowany &lt;nobody@nowhere&gt;</address>
-    <smtpHost></smtpHost>
     <smtpPort>25</smtpPort>
-    <smtpUsername></smtpUsername>
-    <smtpPassword>{AQAAABAAAAAQ55jihaNt8skntAPIOx45k5dRHm9ictUlCwT7xAwezRU=}</smtpPassword>
+    <smtpPassword>{AQAAABAAAAAQiDDIlYVbcoj7oFoKjvjQ5McS5JsvVkpy9h4wh5lUROk=}</smtpPassword>
     <useSsl>false</useSsl>
     <advProperties></advProperties>
     <defaultAccount>true</defaultAccount>
@@ -30,7 +26,6 @@ Check console output at $BUILD_URL to view the results.</defaultBody>
   <defaultReplyTo></defaultReplyTo>
   <allowedDomains></allowedDomains>
   <excludedCommitters></excludedCommitters>
-  <overrideGlobalSettings>false</overrideGlobalSettings>
   <listId></listId>
   <precedenceBulk>false</precedenceBulk>
   <debugMode>false</debugMode>

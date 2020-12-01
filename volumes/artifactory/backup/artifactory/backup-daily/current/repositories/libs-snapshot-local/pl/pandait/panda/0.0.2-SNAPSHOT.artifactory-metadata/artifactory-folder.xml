@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>libs-snapshot-local</repoKey>
+    <path>pl/pandait/panda/0.0.2-SNAPSHOT</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>0.0.2-SNAPSHOT</name>
+  <created>1605665090999</created>
+  <lastModified>1605665090999</lastModified>
+  <additionalInfo>
+    <createdBy>admin</createdBy>
+    <modifiedBy>admin</modifiedBy>
+    <lastUpdated>1605665090999</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

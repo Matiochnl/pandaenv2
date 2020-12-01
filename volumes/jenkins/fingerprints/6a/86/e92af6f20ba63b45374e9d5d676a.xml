@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-11-15 18:58:05.133 UTC</timestamp>
+  <md5sum>6a86e92af6f20ba63b45374e9d5d676a</md5sum>
+  <fileName>Credential id=GitHub name=Matiochnl/****** (klucz do gita)</fileName>
+  <usages>
+    <entry>
+      <string>CI</string>
+      <ranges>8-12</ranges>
+    </entry>
+    <entry>
+      <string>pipline</string>
+      <ranges>7</ranges>
+    </entry>
+    <entry>
+      <string>Coddepull</string>
+      <ranges>1-2</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

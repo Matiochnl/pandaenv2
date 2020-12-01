@@ -303,6 +303,7 @@ html {
   position: relative;
   height: 100%;
   box-sizing: border-box;
+  min-height: none;
 }
 body {
   height: 100%;
@@ -311,10 +312,6 @@ body {
   flex-direction: column;
   background-color: #fff;
   background-color: var(--background);
-}
-html {
-  min-height: none;
-  height: 100%;
 }
 *,
 *:before,
@@ -375,8 +372,6 @@ html {
 body.two-column #main-panel {
   width: calc(100% - 320px);
   flex: 1;
-}
-body.two-column #main-panel {
   display: block;
 }
 body.full-screen {
@@ -727,8 +722,12 @@ pre.console {
   width: 2em;
 }
 .setting-name {
+  font-weight: 500;
   margin-bottom: 0.5rem;
   white-space: nowrap;
+}
+.setting-checkbox {
+  font-weight: 500;
 }
 .setting-main {
   margin-top: 0.25rem;
@@ -765,20 +764,12 @@ pre.console {
 .setting-name,
 .setting-main > input,
 .setting-main > textarea {
+  vertical-align: middle;
   margin-top: 0;
 }
 .setting-main > .yui-button {
   clear: both;
   float: right;
-}
-.setting-main > .yui-button {
-  clear: both;
-  float: right;
-}
-.setting-name,
-.setting-main > input,
-.setting-main > textarea {
-  margin-top: 0;
 }
 .expanding-input {
   display: flex;
@@ -1448,12 +1439,6 @@ TABLE.fingerprint-in-build TD {
   background-color: #eaeff2;
   background-color: var(--plugin-manager-bg-color-already-upgraded);
 }
-#plugins tr.has-dependents input.uninstall {
-  background-color: #e0e0e0;
-  border: 1px solid #cccccc;
-  color: #505050;
-  background-color: white;
-}
 #plugins tr.all-dependents-disabled .enable input {
   pointer-events: auto;
   opacity: 1;
@@ -1462,7 +1447,7 @@ TABLE.fingerprint-in-build TD {
 #plugins tr.has-dependents input,
 #plugins tr.has-disabled-dependency .enable input {
   pointer-events: none;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 #plugins tr.has-dependents-but-disabled .enable input {
   pointer-events: auto;
@@ -1601,6 +1586,7 @@ DIV.to-be-removed {
 .radioBlock-container > .form-container,
 .dropdownList-container {
   margin-left: 0.25rem;
+  border-left: 2px dashed rgba(0, 0, 0, 0.33);
   padding-left: 1rem;
 }
 .row-set-end {
@@ -1821,14 +1807,12 @@ table.progress-bar.red td.progress-bar-done {
   }
 }
 /* ========================= YUI dialog ========================= */
-.dialog .hd {
-  font-size: 0.75rem !important;
-  font-size: var(--font-size-xs) !important;
-}
 /* discovered this margin fix by a trial and error. This can very well be a totally wrong fix, or perhaps updating
  to the latest YUI will fix this? */
 .dialog .hd {
   margin: 0 !important;
+  font-size: 0.75rem !important;
+  font-size: var(--font-size-xs) !important;
 }
 .dialog .bd {
   margin: 0 !important;
@@ -2272,13 +2256,25 @@ body.no-sticker #bottom-sticker {
   background-color: #fff;
   background-color: var(--menu-bg-color);
 }
+/* Overrides for treeview-skin.css */
 .ygtvlabel,
 .ygtvlabel:link,
 .ygtvlabel:visited,
 .ygtvlabel:hover {
   color: inherit;
 }
-DIV.yahooTree td {
+.ygtvfocus {
+  background-color: #eaeff2 !important;
+  background-color: var(--panel-header-bg-color, #c0e0e0) !important;
+}
+.ygtvfocus .ygtvlabel,
+.ygtvfocus .ygtvlabel:link,
+.ygtvfocus .ygtvlabel:visited,
+.ygtvfocus .ygtvlabel:hover {
+  background-color: #eaeff2 !important;
+  background-color: var(--panel-header-bg-color, #c0e0e0) !important;
+}
+div.yahooTree td {
   vertical-align: middle;
 }
 .yui-tt {
@@ -2292,10 +2288,10 @@ DIV.yahooTree td {
   border: none !important;
   background-color: #fff !important;
 }
-.yuimenu LI .yui-menu-tooltip {
+.yuimenu li .yui-menu-tooltip {
   color: #a6a6a6;
 }
-.yuimenu LI.yui-menuitem-tooltip {
+.yuimenu li.yui-menuitem-tooltip {
   border-bottom: 1px solid #808080;
   padding-bottom: 3px;
   margin-bottom: 1em;
@@ -3081,7 +3077,7 @@ sans-serif
   align-items: stretch;
   flex-wrap: wrap;
 }
-.page-footer__flex-row > * {
+.page-footer__flex-row > *:not(script) {
   padding: 0.5rem 1.25rem;
   display: flex;
   align-items: center;
@@ -3255,6 +3251,7 @@ sans-serif
   font-size: 0.875rem;
   font-size: var(--font-size-sm);
   display: inline-flex;
+  font-weight: bold;
 }
 #side-panel .pane-footer {
   font-size: 0.75rem;
@@ -3269,9 +3266,6 @@ sans-serif
   border-radius: 0;
   border-width: 1px;
   padding: 0.5rem 1.25rem;
-}
-#side-panel .pane-header {
-  font-weight: bold;
 }
 #side-panel .pane-header-title {
   display: inline-block;
@@ -3439,8 +3433,7 @@ sans-serif
   width: 70%;
 }
 .build-row .build-row-cell .pane,
-#side-panel .build-row .build-row-cell .pane,
-.build-row .build-row-cell .pane {
+#side-panel .build-row .build-row-cell .pane {
   padding: 0px 2px;
   /* Sync changes with func expandControlsTo50Percent in hudson-behavior.js */
   display: inline-block;
@@ -3873,6 +3866,100 @@ table.bigtable.sortable span.sortarrow {
   .manage-page__column {
     width: 25%;
   }
+}
+.content-block {
+  border-radius: 4px;
+  border: 2px solid #eaeff2;
+  border: 2px solid var(--light-grey);
+}
+.content-block__body {
+  padding: 1.5rem;
+}
+.content-block__body > *:first-child {
+  margin-top: 0;
+}
+.content-block__body > *:last-child {
+  margin-bottom: 0;
+}
+.content-block__footer {
+  background-color: #eaeff2;
+  background-color: var(--light-grey);
+  padding: 0.5rem 1.5rem;
+}
+.content-block__link-list {
+  padding: 0;
+}
+.content-block__link-list li {
+  list-style: none;
+  width: 100%;
+}
+.content-block__link-list li:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+.content-block__link {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eaeff2;
+  background-color: var(--light-grey);
+  -webkit-text-decoration: none;
+  -webkit-text-decoration: var(--link-dark-text-decoration);
+          text-decoration: none;
+          text-decoration: var(--link-dark-text-decoration);
+  font-weight: 600;
+  font-weight: var(--link-dark-font-weight);
+}
+.content-block__link:link {
+  color: #333;
+  color: var(--link-dark-color);
+}
+.content-block__link:visited {
+  color: #333;
+  color: var(--link-dark-visited-color);
+}
+.content-block__link:hover,
+.content-block__link:focus {
+  color: #0587d4;
+  color: var(--link-dark-color--hover);
+  -webkit-text-decoration: underline;
+  -webkit-text-decoration: var(--link-dark-text-decoration--hover);
+          text-decoration: underline;
+          text-decoration: var(--link-dark-text-decoration--hover);
+}
+.content-block__link:active {
+  color: #095683;
+  color: var(--link-dark-color--active);
+  -webkit-text-decoration: underline;
+  -webkit-text-decoration: var(--link-dark-text-decoration--active);
+          text-decoration: underline;
+          text-decoration: var(--link-dark-text-decoration--active);
+}
+.content-block__link:focus {
+  outline-color: #3fb3f7;
+  outline-color: var(--focus);
+}
+.content-block__link .trailing-icon .svg-icon.icon-sm {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.content-block__help-link {
+  background-color: #fff;
+  background-color: var(--white);
+}
+.empty-state-block {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+.empty-state-section {
+  margin-top: 2rem;
+}
+.empty-state-section-list {
+  padding: 0;
+}
+.empty-state-section-list li {
+  list-style: none;
+  margin-bottom: 1rem;
 }
 
 

@@ -38,9 +38,10 @@ token:
     expire-after-write-seconds: 60  # number of seconds Access waits before deleting an entry from the cache
     maximum-size: 1000              # maximum number of tokens Access allows in the cache
   revocation:
-    minimum-revocable-expiry: -1  # (seconds) token with expiry (expirationTime-issuedAt) below this value will not be revocable. (tokens without expiry are always revocable) set to -1 to make all tokens with expiry non-revocable (default).
+    minimum-revocable-expiry: 21600    # DEPRECATED - Please use 'revocable-expiry-threshold' instead - (seconds) token with expiry (expirationTime-issuedAt) below this value will not be revocable. (tokens without expiry are always revocable) set to -1 to make all tokens with expiry non-revocable (default).
+    revocable-expiry-threshold: 21600  # Available from Artifactory 7.8.0 - (seconds) token with expiry (expirationTime-issuedAt) below this value will not be revocable. (tokens without expiry are always revocable) set to -1 to make all tokens with expiry non-revocable (default).
   persistency:
-    persistent-expiry-threshold: 10800 # (seconds) token with expiry (expirationTime-issuedAt) below this value will not be persistent. set to -1 to make all tokens persistent. lowering this value will effectively revoke all tokens with expiry below the old value and above the new revocable-expiry-threshold.
+    persistent-expiry-threshold: 10800 # Available from Artifactory 7.8.0 - (seconds) token with expiry (expirationTime-issuedAt) below this value will not be persistent. set to -1 to make all tokens persistent. lowering this value will effectively revoke all tokens with expiry below the old value and above the new revocable-expiry-threshold.
   delete-with-user: true # if should delete user tokens when deleting user.
   block-simultaneous-login: false # when set to true, Access will revoke User's session tokens when a new session token is created for the same user
 task:
@@ -71,7 +72,7 @@ federation:
       - groups
       - permissions
       - tokens
-    exclude-users: ["access-admin"] # do not put this user in the federated server (must be an array)
+    exclude-users: ["admin","access-admin","xray"] # do not put this user in the federated server (must be an array)
     buffer-wait-millis: 30000  # amount of time (ms) data should be accumulated before being sent
     buffer-max-size: 500       # maximum number of events that can be accumulated before triggering sending of data
     consider-stale-hours: 168  # time (hours) server can remain unresponsive before being considered stale
@@ -100,6 +101,7 @@ federation:
             - ".*b.*"
           exclude-patterns:
             - ".*aa.*"
+        force-override: true            # if true then the target (if access >= v7.8 or >= 6.21.1) will always erase local changes even if updated
 #      - name: hello-2                    # you can configure any number of target servers
 #        url: "http:#example2.com/access"
   inbound:                # inbound configuration specifies receiving data
@@ -126,5 +128,5 @@ licenses:               # should only be set by Artifactory
   - server-name: "hello"
     key:         "veryLongLicense"
 max-config-files-to-retain: 10  # maximum number of configuration file versions to save after being updated
-schema-version: 1         # internal for future use
+schema-version: 2         # Mark the configuration schema version. If it's not the latest version, a migration operation will be performed.
 do-not-import-this-file   # Ignore: a marker to prevent import of this file

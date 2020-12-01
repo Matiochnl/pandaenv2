@@ -1,10 +1,10 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<org.jenkinsci.plugins.configfiles.GlobalConfigFiles plugin="config-file-provider@3.6.3">
+<org.jenkinsci.plugins.configfiles.GlobalConfigFiles plugin="config-file-provider@3.7.0">
   <configs class="sorted-set">
     <comparator class="org.jenkinsci.plugins.configfiles.ConfigByIdComparator"/>
     <org.jenkinsci.plugins.configfiles.maven.MavenSettingsConfig>
-      <id>70a33736-937d-4f10-9425-0d7a1ede2339</id>
-      <name>MySettings</name>
+      <id>e23083f0-e34d-4c5d-b893-17c91ab4863d</id>
+      <name>MavenSettings</name>
       <comment>User settings</comment>
       <content>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 

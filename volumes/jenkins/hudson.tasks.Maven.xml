@@ -2,7 +2,7 @@
 <hudson.tasks.Maven_-DescriptorImpl>
   <installations>
     <hudson.tasks.Maven_-MavenInstallation>
-      <name>auto_maven</name>
+      <name>M363</name>
       <properties>
         <hudson.tools.InstallSourceProperty>
           <installers>

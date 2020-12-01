@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>libs-release-local</repoKey>
+    <path>pl/pandait/panda/maven-metadata.xml</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>maven-metadata.xml</name>
+  <created>1605380961292</created>
+  <lastModified>1605471353873</lastModified>
+  <size>322</size>
+  <additionalInfo>
+    <createdBy>maven</createdBy>
+    <modifiedBy>admin</modifiedBy>
+    <lastUpdated>1605471353877</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2fed9e1a3304342c713641a608e6a88df36c2c2a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>cede1ebdca70236ae2c637db4d4f0838</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>956262986276075ba4463b73f8b0c3d01db4650ffc8abe4be3c3bdb2b3d2552f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

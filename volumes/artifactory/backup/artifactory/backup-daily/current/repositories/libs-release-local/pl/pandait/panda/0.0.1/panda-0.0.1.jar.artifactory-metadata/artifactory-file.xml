@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>libs-release-local</repoKey>
+    <path>pl/pandait/panda/0.0.1/panda-0.0.1.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>panda-0.0.1.jar</name>
+  <created>1605380960741</created>
+  <lastModified>1605471351845</lastModified>
+  <size>19063698</size>
+  <additionalInfo>
+    <createdBy>maven</createdBy>
+    <modifiedBy>admin</modifiedBy>
+    <lastUpdated>1605471352907</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>5f5b70a6475df4c8df71e138da861f1b3e38c475</original>
+          <actual>5f5b70a6475df4c8df71e138da861f1b3e38c475</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>b8b811843fbe53bf3f0c7e5e3fe8087f</original>
+          <actual>b8b811843fbe53bf3f0c7e5e3fe8087f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bf62033e5f15f2c37fb5b43620f0df176ad7ec81c71fb2812eada8f7a6da2a40</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

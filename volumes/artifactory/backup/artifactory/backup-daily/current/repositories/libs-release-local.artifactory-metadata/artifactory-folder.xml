@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>libs-release-local</repoKey>
+    <path></path>
+    <folder>true</folder>
+  </repoPath>
+  <name></name>
+  <created>1605378309406</created>
+  <lastModified>1605378309406</lastModified>
+  <additionalInfo>
+    <lastUpdated>1605378309406</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

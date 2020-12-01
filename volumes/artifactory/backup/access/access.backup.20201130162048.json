@@ -1,0 +1,283 @@
+{
+  "version" : "7",
+  "NodeIdServiceId" : "2d69a69a5258###-###jfac@01eq3y5hnxqgg31h9akh941psg",
+  "users" : [ {
+    "username" : "admin",
+    "firstName" : null,
+    "lastName" : null,
+    "email" : "taiko1532@gmail.com",
+    "realm" : "internal",
+    "status" : "enabled",
+    "lastLoginTime" : 1606688382617,
+    "lastLoginIp" : "192.168.44.1",
+    "password" : "bcrypt$$2a$08$195S/aF7I7lwF66p2/IwkepsvHjQPZd7iPxvsWCdTt7iP99QfgR.K",
+    "allowedIps" : [ "127.0.0.1" ],
+    "created" : 1605376332512,
+    "modified" : 1605378182595,
+    "failedLoginAttempts" : 0,
+    "statusLastModified" : 1605376517980,
+    "passwordLastModified" : 1605376517980,
+    "customData" : {
+      "public_key" : {
+        "value" : "JUHfDLxBPMe4YZbWLKdbams2ZTPq3rmG1zxgSyoqKDfX16qqxSaueGkfUybzHXy78WGgpC6DPCrva62JTua3tD7ASiheB7iMMvQYPzJmSh2C1bWFmK7VyAN2JfK1pWyNF5ETM",
+        "sensitive" : true,
+        "clusterLocal" : false
+      },
+      "disabled_password" : {
+        "value" : null,
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "gen_password_key" : {
+        "value" : null,
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "updatable_profile" : {
+        "value" : "true",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "watch_manager" : {
+        "value" : null,
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "reports_manager" : {
+        "value" : null,
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "private_key" : {
+        "value" : "JR2YxGPoiQWMe5LjB88jM6zCPHBf5zHCsebJyWwzaWCr1UH7XRipyrk6caoYrmru6Ym5rvAyNZwfq9Yxm99Htay6oSzCeR8TrFRhk2zfMM2ov5o1X84SHiCfskuFfP7YkcBp8xNSuuLzSe1xzmHaQQQGbTt7Zga9toA4YsbPqhcUtxaUa2YKSFDHzaamCiSqE9cUSa9hcRu9SMyskU3X5Xi7dbE5tkDBak5V7t6NDjTbujZu522Tj2ebgPR8yYDxZx7WPUzGo6TZBYYTyUuWMRgYd1jUj86Fr3jsmFvAtUtFbqU6CMkqAYHaDj9UadjsqKMeR3QbjXrpKcAEUF2qoiVVa91TdS9Y36jxkmBhATQkvbq2Bstk5Tq892r1xnGrum5x9TPePpb87BvaSvzw4bcM31gvp1JoGxeFS3toocbmtvw1jY4fpNww83jKYqDBwkijsfEzv5zJTtuq6xRhvqjohSf",
+        "sensitive" : true,
+        "clusterLocal" : false
+      },
+      "artifactory_admin" : {
+        "value" : "true",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "bintray_auth" : {
+        "value" : null,
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "policy_manager" : {
+        "value" : null,
+        "sensitive" : false,
+        "clusterLocal" : false
+      }
+    },
+    "groups" : [ {
+      "name" : "MavenOnlyGroup",
+      "realm" : "internal"
+    } ]
+  }, {
+    "username" : "anonymous",
+    "firstName" : null,
+    "lastName" : null,
+    "email" : null,
+    "realm" : "internal",
+    "status" : "enabled",
+    "lastLoginTime" : 0,
+    "lastLoginIp" : null,
+    "password" : null,
+    "allowedIps" : [ "*" ],
+    "created" : 1605376355959,
+    "modified" : 1605376355959,
+    "failedLoginAttempts" : 0,
+    "statusLastModified" : 1605376355959,
+    "passwordLastModified" : 1605376355959,
+    "customData" : { },
+    "groups" : [ ]
+  }, {
+    "username" : "maven",
+    "firstName" : null,
+    "lastName" : null,
+    "email" : "mateusz.ohel@gmail.com",
+    "realm" : "internal",
+    "status" : "enabled",
+    "lastLoginTime" : 1605378605863,
+    "lastLoginIp" : "192.168.44.1",
+    "password" : "bcrypt$$2a$08$qdbcy9ppPlxtOJygLp9X8uLWcX1XJGusUfkGubYcurPGz9PI5tokG",
+    "allowedIps" : [ "*" ],
+    "created" : 1605378590155,
+    "modified" : 1605378590155,
+    "failedLoginAttempts" : 0,
+    "statusLastModified" : 1605378590155,
+    "passwordLastModified" : 1605378590155,
+    "customData" : {
+      "updatable_profile" : {
+        "value" : "true",
+        "sensitive" : false,
+        "clusterLocal" : false
+      }
+    },
+    "groups" : [ {
+      "name" : "MavenOnlyGroup",
+      "realm" : "internal"
+    } ]
+  } ],
+  "tokens" : [ {
+    "id" : "0b1e2461-e4c3-4e24-8bb9-478b8336c56e",
+    "subject" : "jffe@000/users/admin",
+    "owner" : "jffe@000",
+    "created" : 1606698321645,
+    "scope" : "HASHED:69c537d45f36a316ac544a2b6271540eb3e94abefcdbeef93d300f9ccea7c38e",
+    "type" : "session",
+    "username" : "admin",
+    "expiry" : 1606700121645,
+    "refreshToken" : "c5aafe39a705154f464f1e3b036767a68811fd0bb563b2e67943cbe08982f51a"
+  } ],
+  "federation_events" : [ ],
+  "federation_servers" : [ ],
+  "permissions" : [ {
+    "name" : "jfrt@01eq3y695wyeyk113jwgpm0jmv:edc44f18-e9e1-4517-944d-c079b0204562",
+    "displayName" : "Anything",
+    "resourceType" : "repo",
+    "serviceId" : "jfrt@01eq3y695wyeyk113jwgpm0jmv",
+    "created" : 1605376356154,
+    "modified" : 1605376356154,
+    "customData" : "{\"repoKeys\":[\"ANY\"],\"excludePattern\":\"\",\"includePattern\":\"**\",\"updatedBy\":\"_system_\"}",
+    "actions" : [ {
+      "action" : "r",
+      "principal" : "anonymous",
+      "principalType" : "USER",
+      "id" : "anonymous(USER):READ"
+    }, {
+      "action" : "r",
+      "principal" : "readers",
+      "principalType" : "GROUP",
+      "id" : "readers(GROUP):READ"
+    } ],
+    "implicit" : false
+  }, {
+    "name" : "jfrt@01eq3y695wyeyk113jwgpm0jmv:3d044440-463c-4b95-8d6e-9e9847ad9fcb",
+    "displayName" : "Anything",
+    "resourceType" : "build",
+    "serviceId" : "jfrt@01eq3y695wyeyk113jwgpm0jmv",
+    "created" : 1605376356222,
+    "modified" : 1605376356222,
+    "customData" : "{\"repoKeys\":[\"artifactory-build-info\"],\"excludePattern\":\"\",\"includePattern\":\"**\",\"updatedBy\":\"_system_\"}",
+    "actions" : [ {
+      "action" : "r",
+      "principal" : "anonymous",
+      "principalType" : "USER",
+      "id" : "anonymous(USER):READ"
+    }, {
+      "action" : "r",
+      "principal" : "readers",
+      "principalType" : "GROUP",
+      "id" : "readers(GROUP):READ"
+    } ],
+    "implicit" : false
+  }, {
+    "name" : "jfrt@01eq3y695wyeyk113jwgpm0jmv:d7a94461-2146-4cdb-b83e-cf699574b0c9",
+    "displayName" : "Any Remote",
+    "resourceType" : "repo",
+    "serviceId" : "jfrt@01eq3y695wyeyk113jwgpm0jmv",
+    "created" : 1605376356265,
+    "modified" : 1605376356265,
+    "customData" : "{\"repoKeys\":[\"ANY REMOTE\"],\"excludePattern\":\"\",\"includePattern\":\"**\",\"updatedBy\":\"_system_\"}",
+    "actions" : [ {
+      "action" : "w",
+      "principal" : "anonymous",
+      "principalType" : "USER",
+      "id" : "anonymous(USER):DEPLOY"
+    }, {
+      "action" : "r",
+      "principal" : "anonymous",
+      "principalType" : "USER",
+      "id" : "anonymous(USER):READ"
+    } ],
+    "implicit" : false
+  }, {
+    "name" : "jfac@01eq3y5hnxqgg31h9akh941psg:d90637f6-e646-4f8d-97f8-3622d48241b5",
+    "displayName" : "MavenOnlyPerm",
+    "resourceType" : "repo",
+    "serviceId" : "jfac@01eq3y5hnxqgg31h9akh941psg",
+    "created" : 1605378536690,
+    "modified" : 1605378536690,
+    "customData" : "{\"includePattern\":\"**\",\"excludePattern\":\"\",\"repoKeys\":[\"libs-release-local\",\"libs-snapshot-local\"]}",
+    "actions" : [ {
+      "action" : "d",
+      "principal" : "MavenOnlyGroup",
+      "principalType" : "GROUP",
+      "id" : "MavenOnlyGroup(GROUP):DELETE"
+    }, {
+      "action" : "r",
+      "principal" : "MavenOnlyGroup",
+      "principalType" : "GROUP",
+      "id" : "MavenOnlyGroup(GROUP):READ"
+    }, {
+      "action" : "n",
+      "principal" : "MavenOnlyGroup",
+      "principalType" : "GROUP",
+      "id" : "MavenOnlyGroup(GROUP):ANNOTATE"
+    }, {
+      "action" : "m",
+      "principal" : "MavenOnlyGroup",
+      "principalType" : "GROUP",
+      "id" : "MavenOnlyGroup(GROUP):MANAGE"
+    }, {
+      "action" : "w",
+      "principal" : "MavenOnlyGroup",
+      "principalType" : "GROUP",
+      "id" : "MavenOnlyGroup(GROUP):DEPLOY"
+    } ],
+    "implicit" : false
+  } ],
+  "groups" : [ {
+    "name" : "readers",
+    "description" : "A group for read-only users",
+    "autoJoin" : true,
+    "realm" : "internal",
+    "realmAttributes" : null,
+    "created" : 1605376356001,
+    "modified" : 1605376356001,
+    "customData" : { }
+  }, {
+    "name" : "MavenOnlyGroup",
+    "description" : null,
+    "autoJoin" : false,
+    "realm" : "internal",
+    "realmAttributes" : null,
+    "created" : 1605378182508,
+    "modified" : 1605378182575,
+    "customData" : { }
+  } ],
+  "platform_configurations" : [ {
+    "config_key" : "roles.v2.global.configuration",
+    "config" : "{\"roles\":[{\"name\":\"Developer\",\"description\":\"Developer Role\",\"type\":\"PREDEFINED\",\"environments\":[\"DEV\"],\"mask\":2325231},{\"name\":\"Contributor\",\"description\":\"Contributor Role\",\"type\":\"PREDEFINED\",\"environments\":[\"DEV\"],\"mask\":80103},{\"name\":\"Viewer\",\"description\":\"Viewer Role\",\"type\":\"PREDEFINED\",\"environments\":[\"DEV\"],\"mask\":67617},{\"name\":\"Releaser\",\"description\":\"Releaser Role\",\"type\":\"PREDEFINED\",\"environments\":[\"DEV\"],\"mask\":268173568},{\"name\":\"Project Admin\",\"description\":\"Project Admin Role\",\"type\":\"ADMIN\",\"environments\":[\"DEV\",\"PROD\"],\"mask\":268435455}]}",
+    "revision" : 1
+  }, {
+    "config_key" : "projects.default.configuration",
+    "config" : "{\"name\":\"default\",\"description\":\"Virtual project with all resources\",\"roles\":{\"Releaser\":{\"name\":\"Releaser\",\"description\":\"Releaser Role\",\"type\":\"PREDEFINED\",\"environments\":[\"DEV\"],\"mask\":268173568},\"Developer\":{\"name\":\"Developer\",\"description\":\"Developer Role\",\"type\":\"PREDEFINED\",\"environments\":[\"DEV\"],\"mask\":2325231},\"Contributor\":{\"name\":\"Contributor\",\"description\":\"Contributor Role\",\"type\":\"PREDEFINED\",\"environments\":[\"DEV\"],\"mask\":80103},\"Viewer\":{\"name\":\"Viewer\",\"description\":\"Viewer Role\",\"type\":\"PREDEFINED\",\"environments\":[\"DEV\"],\"mask\":67617},\"Project Admin\":{\"name\":\"Project Admin\",\"description\":\"Project Admin Role\",\"type\":\"ADMIN\",\"environments\":[\"DEV\",\"PROD\"],\"mask\":268435455}},\"users\":{},\"groups\":{},\"resources\":{},\"projectAdminCanManageMembers\":true,\"projectAdminCanManageResources\":true,\"storageQuotaBytes\":0}",
+    "revision" : 1
+  } ],
+  "encryption" : "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBb01PUVBVNXQxNzFIZG1qTDk3VFRtWVEwYnc0dEJtbUhRVFZLQnNrbXVyaEdDUnJSClZXRmhVQklVc2o3bFlJLzZjZzVxQmFab0lPanhwbWdtV0xPQXJYT1NTcFc4WWxQMGNLMm9pZytXQmlyQXNlYmMKR293T3NBMXB0eHJoc0RsUkk2SHZESSttbXIyTnZ3eEpEd2MxVUpCMWY4SUQ5R0p4QVF0dUppQjcvZXJGNFZSYwo3eDk4VUxia2lCVHpGM3B0VmpGTkZYdUdLeVI4c0ZMMXVkTXFXYjNtSnBNd3p3U2ExWDFzZlNwaDM1c2tKY3RZClkvWU84THlxUmZ3WExwdEFrd2NFNzc3Nlc1b0NYWGRRakw0L1c0bkFaNHU1UXozVEZvNFE4cEpOd2ZLRTNMZXoKQ2JraUdJN1ZuT3EzdHU1LytiZWVwN0FUT2FqRkxSN1d4NGxWNFFJREFRQUJBb0lCQUhLT2FINEhJU2FXYmhIbQpZMUhEdlBTcnpHRkdqTGNCQTZ4bnVMUlZLZy9ydDV4TlM5VzNhb3lRRmNkZUlqMUkyNEhpMjVIakhsZzFKZDBhClloamE4RnFvL0JuQjBWZVAwNk5uVzYzbHBWWUhxUUFjTGNPTkFmcFoxSGJ4NU5pYVAwTlE1UExpZWluUjRPdSsKYVdFWUZkbXUxc3VQQ1JwZiszNXZFcktBZTFwWGpBN2ZTWGxTQktWRVNPQjRPUzVQMkl0M3JmdU1JQVJuOEFnWQpBbEFKRGdYTVJhSjZiK0JyNVBTRXJScko0dDZkNXg4OW44U0k4TWhKSGY3K1NkZFRvdDBIZFl3bVJKSTRhVVU1CkFIZUh2Ly9RVlJmTmdYWVYxSmxuU3hHbEkzQ1RzMTBxTXRwZHNVcG1rdjB0LzZaUHVYb2JDVU9MelNJY0NSWVYKT0plZnpyRUNnWUVBMHA0VXdGUUQzSWdrUHZTdFJJamFWUW5rMEs4WU9Lc1JzVGFSa0VwVFF0OUNFZXVZN1R1NAp5ZlJWV3JiMmFraEpEYW9ReCtGMFBwUkQ5SXY5T0txWWt5WC8zaXZYUXdRQUh6SWVDUVFxSUthS01hNlBST2FJClNZVGM5VzJqS2UyWXp1aWJ5ZjcyTjNpc3R6V3ZVWDJwQUNpRlQ3Z0t2WlAxdWdtV2crOFdiZjhDZ1lFQXcyZC8KYXdEVXVRYU9VTHcvMU1Nb1JPRTZIL3NuQVYyOFZXQWs3cml5TWFSN3oybktzT09CMEtoeG9GTnJieEhTMjFGRwpESDhKNktaYkV0OW0zWVVrZjhVVEowV1B5TC9zNG5WdG8vbkQvVllTMlRWakJlVXFlM2xnQ2tIbXpUckc3akVxCjdpdCs1blUydE0yZ2FkRnRmdUxkOVRmQ0wrRFBCdXJMVVlaMS9COENnWUJTRFh3UUlhc1BjNHFMYkU5RWIveC8KUE1lRDlYTCtRTWMzdndhZXJCWWI2MWFXSEs4TFhVVDBpTmZuNjNlOG1FUzlxZyszajBIMlQxVGFKTitXQUFCSQo4M2puV1RVWHlxc3hmQmp2Y2t2blJIcDZPSU5nV0Yrb0pMYmdkc0ltUjRaTXRacGI2NVNJcjk2NTBaUm5yd2owCkl0VXM1WXBwcVFjR1gwM2dRSGtBaVFLQmdRQ2ZGMjdvUWI3di9lUjAyeS9sSEJkM0xTRFQxUG5HNVBoblVtWC8KYnFTMlFrTURkaEN1d0N4N0pBbVBEUndWVEIrdXJKY3BxV3o1M0NlZVVBRkNMaHF2WkZiWnpJcnFXVWlXZ0NFSwpObHBac25DYUpCdEJPM25CR2VzVnJ0NHBEY2ZWT25iSGZ1Wk0zL1h3Y3RJK0ZXTGV3ZnNRb1pzYXZDQVNjNnVoCjdxVzA1UUtCZ0ZvdFN4N1dSRjR3M3BSRWpvY0N3VFptRmFUWmZwTkk3UUQwS3grRnU3U25KcSs4bW1HMnFyYkkKUS91LzZoWHdIU2s5OHcvR3YwcEF6RGFkZzljaG1WcmdMcmg1VWRENVR3RUY0QzZ1cUF3VVRMVXZSNnFnZWQ2OApZMlpuZWVNYWtaM29aRlFoRDhsblFqaERFMit2dVEwSlhZZWJpdFlLR2Mxdm1rc0EzUDFyCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCiRhY2Nlc3MkLS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURJRENDQWdpZ0F3SUJBZ0lSQUtPcExtN0U5a3NuaXV2ZlZCV0pEQUl3RFFZSktvWklodmNOQVFFTEJRQXcKUFRFN01Ea0dBMVVFQXd3eVNrWnliMmNnVkc5clpXNGdTWE56ZFdWeUlHcG1ZV05BTURGbGNUTjVOV2h1ZUhGbgpaek14YURsaGEyZzVOREZ3YzJjd0lCY05NakF4TVRFek1UYzFNakV4V2hnUE56QXdNREF4TURFd01EQXdNVEZhCk1EMHhPekE1QmdOVkJBTU1Na3BHY205bklGUnZhMlZ1SUVsemMzVmxjaUJxWm1GalFEQXhaWEV6ZVRWb2JuaHgKWjJjek1XZzVZV3RvT1RReGNITm5NSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQQpvTU9RUFU1dDE3MUhkbWpMOTdUVG1ZUTBidzR0Qm1tSFFUVktCc2ttdXJoR0NSclJWV0ZoVUJJVXNqN2xZSS82CmNnNXFCYVpvSU9qeHBtZ21XTE9BclhPU1NwVzhZbFAwY0syb2lnK1dCaXJBc2ViY0dvd09zQTFwdHhyaHNEbFIKSTZIdkRJK21tcjJOdnd4SkR3YzFVSkIxZjhJRDlHSnhBUXR1SmlCNy9lckY0VlJjN3g5OFVMYmtpQlR6RjNwdApWakZORlh1R0t5UjhzRkwxdWRNcVdiM21KcE13endTYTFYMXNmU3BoMzVza0pjdFlZL1lPOEx5cVJmd1hMcHRBCmt3Y0U3Nzc2VzVvQ1hYZFFqTDQvVzRuQVo0dTVRejNURm80UThwSk53ZktFM0xlekNia2lHSTdWbk9xM3R1NS8KK2JlZXA3QVRPYWpGTFI3V3g0bFY0UUlEQVFBQm94a3dGekFWQmdSVkhSRUJCQTB3QzZBSkJnUlZIUkVCQWdFQQpNQTBHQ1NxR1NJYjNEUUVCQ3dVQUE0SUJBUUNMTjlRYkhuYnVUWlZRWHBuSjF3N1RsdDRFQ3ZWb2M1dFBSR2xICnlIR2hnNHcxSjFyYlhWNkI0RDdaeU1MYXd5cGdUbFZkaXpJNmM4RDNLRzhDdy80eExNdmF1S0FiWE44NXhLOFgKTmR2UU5EQThVakkyOHNqbWQxMHpvcU90dk9URmZYb0srVHp4TGhyN1k0VURUTVFVVjRnam4vd2J1WmdiL1FWYwpzOTlPL21UdXNNcmdaY3U5dElld3RMSWVJQlczUnFhV2w5bG5XZDc5M2c5enFKaG1XZ2hsVWpCSTlVc201dWJNCmJmcE44M2lKVldLZ1B4UWhTcE8wUDB5bWNjUnBlWnBDUFZrUk1xWWw2eFZidndUSEU2RTl2Q2I2ak9UWGNrNmcKamd1YlpqN2wwcTQ1dFF5SWZ6UWpZMHpidkpVU3psN0NTdEtLSjFUazhIT0s2VTJjCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0KJGFjY2Vzcy1zZWdzJC0tLS0tQkVHSU4gUlNBIFBSSVZBVEUgS0VZLS0tLS0KTUlJRW9nSUJBQUtDQVFFQXhmbzkwVldaalBRMk81QmxrSGZmVUl1K2lHb1NOL04zcDVodllsT1IyVVZhcDluZQpmNExsMmhpaWw1T2s5VlBVWDdiZ1M3UWd5anFZalFnMjdxbkJwRWxrVE1oZndQQ2tVNUtRa1VxNi9YUXFma2FvClZaMDd0VEwwSjlCMHd2VzYxMGlYZmdrcUR5NVlQWHpldzNhWktXZ2FGQThKKzFJbXNSWGRrRTZJeHJjZDRObTYKU3BrSFhTMElPSlBSb1FVZUliRWZnclc1UzQwVmtNNEZ0V2U4c3FGa3g2QkRnQk5pOERSSHRkdmNxVnluWjA4Tgo5OGdrMURWNG16Vk9nTG9kWGlOejQyTmJsOE1vQ0dwMVJpVTNvRjNlODFyNTdZdE4zdHp2anJSbi9sNjdNK3RxCjhlazlaVEJERFdhRnUrcE83R0dZaTJwazFKNlBpWmtuSEhsdUd3SURBUUFCQW9JQkFHV3o5dnZKOEpiRGdmUzUKYWlOOElTRmNtS1cxYitTRVUweXFkMVhZdm8wU0hzOHBraTZKRFJFc0pLS2ZlMWQ0R0JxUGRNd1BIZVVsa3VhbwplS2ZFVnpEUmJ4QXV3MW4zaFVOVmdLVFM4aHB3Q2NCVEJmanRUQlg2dGdpYUF0R0FzTm9WZFpXT21hZXcxQzNLCkx4blVuRHYwT2FsaVRHdHFPV3d4WWwvV3FGY0VKTXlOUUp2OUpCcTEyRi91T1A4Unk3eDNMRGtldmNlVUppcWgKZlE2cld6KzNFR2l1bU9SL254WjQ3YU5HY2pKSXhHbVdjQXM3aWo4azNKajdiRTJTREFSTm9oaHZDS0puQXZ1SQp6VUVBdS9UUE5xYm9pckRCNzE4TGYrOXcxVm1XdXVjNUx5YUNCR2dGMjJrYjk1c1ZvSk9RdXNONHp1Tk9HdXJyCnJzMzNIWkVDZ1lFQTlaTjNka2syaDZBaFNZRUQ1RjdYb1o0dHNVbU5JbFpoL3lTalphUVgrdThxTGNkbXUwM0cKQjB2UXRDcU5Da2t2M2JYaTRhVGthTXNtRXEweS9kYmhPWlJhSTNwb3ZvSksxOE9oSkQvNXJ0eFk3VnU4eGsrYwo5d21IWjFCaWdLd21EVE5kYWN2QVNHclpQajg5Q1ZUQ1Vpem1BMVl2bHYySWM0R2ErcUxSc2hNQ2dZRUF6bUdNCmlNK21UMG1pYmpkbTI5Zm9TTzlBNkJMRVRZUlZ0WlRFS2xBS1cxcVhMRXZwN0MzalZTSHI0QW1uUmpGSU5iUWIKbk44VDlsb2I4RjREblBuaUVDOUZQeTNkaVN4dnQ5NFRJdm41T0RxVDZvTVo2WXVTQ3RGRVd1eTdaTlhXSVMyMgpxTnpaZ3gvbXJ1dHhGaGVnR2REd1hsQmZDS200dlZ6WERjZndGTmtDZ1lBc1FQRE1MaEZYaTNHMEx6Mm1UN2tICjlOdERFWUFQYWdXcTFzMWpLWmp3clZ5cWR6NTZEbC9iUEx4Vld6MmpWdUQ3VVNXYmgvMXBMUUtsWnZURGJZK1UKc3Jrem40RjBvMElkYzdGOE9OTWp3YTE4eUlWU0wxS1g2ZTJ1bm52QnVFUDdLUUJ5YWpjeVZaN2thcnp6QzRVaApEZG85UzdDend1aHQrRE1YYTNQaVpRS0JnQ2svOENIc054YUQ1alpYVm5TOGU4NFFIQTRHcWp2QUpvMXJsYVhMClo3YUlyY3lKdzlDVC8yc2xvNHFkQTFVUlJwaU5Uak9WbHR6WGQ5d2NQbWFpdjE5eXcwbDBkbUlUZ3FUaWV6cXoKY2UrZUxiQmkwY3dQUEhwekIxR1JIWWR6QWlDUmpYL0UzS2pMdUlUZnhET2hOenZSdWlsdnNQNy9SVkI3L1BQaApNWWhKQW9HQVFBTG5wQktvQ3A0NnVxMkU5ODJHdzhWZWsyem5helhkSVBDaXhoeFkrYXRmeDRacXF1L2ZkRlNwCnBndjJveEdwYkVSR2dGeHR4UXpZVlFTWVlqR1hXdE1DWVpyTTAwYWQyQWxjWEM2SzBxejYxQmlZRkZmYmxOSEoKRWdleGw2OXhwbTNQci9aa0hWbFlmM2lDS2NOaGFKdXRJN050RitvMklJbXpzUWx3Q0xvPQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQokYWNjZXNzJC0tLS0tQkVHSU4gQ0VSVElGSUNBVEUtLS0tLQpNSUlETmpDQ0FoNmdBd0lCQWdJUUJaY0tJZXdvVFBtQWV1Tm93dHIrQ1RBTkJna3Foa2lHOXcwQkFRc0ZBREE0Ck1UWXdOQVlEVlFRRERDMUtSbkp2WnlCU2IyOTBJRU5CSUdwbVlXTkFNREZsY1RONU5XaHVlSEZuWnpNeGFEbGgKYTJnNU5ERndjMmN3SUJjTk1qQXhNVEV6TVRjMU1qRXlXaGdQTnpBd01EQXhNREV3TURBd01URmFNRGd4TmpBMApCZ05WQkFNTUxVcEdjbTluSUZKdmIzUWdRMEVnYW1aaFkwQXdNV1Z4TTNrMWFHNTRjV2RuTXpGb09XRnJhRGswCk1YQnpaekNDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFNWDZQZEZWbVl6ME5qdVEKWlpCMzMxQ0x2b2hxRWpmemQ2ZVliMkpUa2RsRldxZlozbitDNWRvWW9wZVRwUFZUMUYrMjRFdTBJTW82bUkwSQpOdTZwd2FSSlpFeklYOER3cEZPU2tKRkt1djEwS241R3FGV2RPN1V5OUNmUWRNTDF1dGRJbDM0SktnOHVXRDE4CjNzTjJtU2xvR2hRUENmdFNKckVWM1pCT2lNYTNIZURadWtxWkIxMHRDRGlUMGFFRkhpR3hINEsxdVV1TkZaRE8KQmJWbnZMS2haTWVnUTRBVFl2QTBSN1hiM0tsY3AyZFBEZmZJSk5RMWVKczFUb0M2SFY0amMrTmpXNWZES0FocQpkVVlsTjZCZDN2TmErZTJMVGQ3Yzc0NjBaLzVldXpQcmF2SHBQV1V3UXcxbWhidnFUdXhobUl0cVpOU2VqNG1aCkp4eDViaHNDQXdFQUFhTTZNRGd3RGdZRFZSMFBBUUgvQkFRREFnS0VNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHcKRlFZRVZSMFJBUVFOTUF1Z0NRWUVWUjBSQVFJQkFEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUF4ZEhtRHJTTApIWGhieFl2WkdYaDJ2cHN5NkJ5a0oxeVl3eGFzYzZvd1VmbGNabTJWTkV2Z0M3NWhvY2d0SU9uV0Q0ak9LMkVtCm1BWjAzcUtrTGxPV1VUaG9OWGtiUnhhZFZUK0Q0QnVJeFJRSlVTRnk2UnNlK0wrYklVbUpHS1Y2YmJkWjI2T2IKQ2djaEJFNnRsSklxamhLaGcyandiWXZOTWxHNXJUN3lwUG5Qd3oxeUg0VDNKcUFMVkdGSDJ2aktFWjR0cU9IUwpoWWlFenBoVUM1SzlZK1JWMGh0Wko3NHpPMGh2dGhjVlUvTDFDc3pBQUprNVUwWktVQzZDVG0wTEx1ZVNHS2x0Ci9RWVg0Rm1NMUlSWWg0VHorQldEM25PNUY3dVdnME9aaVRRcmd4cnZ5NzljQ0VOU3ZFK053MjkyTW54cnJQdnYKT3VkRUgyZlNBN0ErQ0E9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+  "config" : {
+    "federation" : {
+      "inbound" : {
+        "service-id-mapping" : [ {
+          "from" : "jfrou@*",
+          "to" : "jfrou@01eq3y5pn2jzt47gncgnqyypwv"
+        }, {
+          "from" : "jfevt@*",
+          "to" : "jfevt@01eq3y5hnxqgg31h9akh941psg"
+        }, {
+          "from" : "jfmd@*",
+          "to" : "jfmd@01eq3y5qexw7pcpmwpjtdczkzq"
+        }, {
+          "from" : "jfrt@*",
+          "to" : "jfrt@01eq3y695wyeyk113jwgpm0jmv"
+        }, {
+          "from" : "jffe@*",
+          "to" : "jffe@000"
+        } ]
+      }
+    },
+    "schema-version" : 2
+  }
+}

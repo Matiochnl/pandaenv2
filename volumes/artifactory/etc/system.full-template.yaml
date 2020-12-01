@@ -61,6 +61,9 @@ shared:
     ## Default: auto resolved by startup script
     #ip:
 
+    ## Default: auto resolved by startup script
+    #name: ""
+
     ## Sets this node as primary in HA installation
     #primary: true
 
@@ -70,40 +73,40 @@ shared:
   ## Database Configuration
   database:
     ## One of: mysql, oracle, mssql, postgresql, mariadb
-    ## Default: Embedded derby
+    #Default: Embedded derby
 
     ## Example for postgresql
     #type: postgresql
     #driver: org.postgresql.Driver
-    #url: jdbc:postgresql://<your db url, for example: localhost:5432>/artifactory
+    #url: "jdbc:postgresql://<your db url, for example: localhost:5432>/artifactory"
     #username: artifactory
     #password: password
 
     ## Example for mysql
     #type: mysql
     #driver: com.mysql.jdbc.Driver
-    #url: jdbc:mysql://<your db url, for example: localhost:3306>/artdb?characterEncoding=UTF-8&elideSetAutoCommits=true&useSSL=false
+    #url: "jdbc:mysql://<your db url, for example: localhost:3306>/artdb?characterEncoding=UTF-8&elideSetAutoCommits=true&useSSL=false"
     #username: artifactory
     #password: password
 
     ## Example for oracle
     #type: oracle
     #driver: oracle.jdbc.OracleDriver
-    #url: jdbc:oracle:thin:@<your db server url, for example: localhost:1521>:ORCL
+    #url: "jdbc:oracle:thin:@<your db server url, for example: localhost:1521>:ORCL"
     #username: artifactory
     #password: password
 
     ## Example for mssql
     #type: mssql
     #driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    #url: jdbc:sqlserver://<your db server url, for example: localhost:1433>;databaseName=artifactory;sendStringParametersAsUnicode=false;applicationName=Artifactory Binary Repository
+    #url: "jdbc:sqlserver://<your db server url, for example: localhost:1433>;databaseName=artifactory;sendStringParametersAsUnicode=false;applicationName=Artifactory Binary Repository"
     #username: artifactory
     #password: password
 
     ## Example for mariadb
     #type: mariadb
     #driver: org.mariadb.jdbc.Driver
-    #url: jdbc:mariadb://<your db server url, for example: localhost:3306>/artdb?characterEncoding=UTF-8&elideSetAutoCommits=true&useSSL=false
+    #url: "jdbc:mariadb://<your db server url, for example: localhost:3306>/artdb?characterEncoding=UTF-8&elideSetAutoCommits=true&useSSL=false"
     #username: artifactory
     #password: password
 
@@ -124,21 +127,21 @@ shared:
   ##        Make sure to change ownership of JFROG_HOME/artifactory/app and JFROG_HOME/artifactory/var directory, if this is modified after install
   #user: artifactory
   #group: artifactory
-
-  ## Metrics Configuration
+  
+  ## Metrics configuration
   metrics:
     ## Settings for pushing metrics to Insight
     filebeat:
       ## If enabled, Filebeat will be started and metrics will be pushed to Elasticsearch
       #enabled: false
       ## Configuration settings for log files of filebeat
-      #log:
-         #enabled: false
-         ## Log level for filebeat. Possible values: debug, info, warning, or error.
-         #level: "info"
+      log:
+        #enabled: false
+        ## Log level for filebeat. Possible values: debug, info, warning, or error.
+        #level: "info"
       ## Elasticsearch details for filebeat to connect
-      #elasticsearch:
-        #url: "Elasticsearch url where JFrog Mission Control is installed" For example, http://<ip_address>:9200
+      elasticsearch:
+        #url: "Elasticsearch url where JFrog Mission Control is installed For example, http://<ip_address>:8082"
         #username: ""
         #password: ""
 
@@ -151,17 +154,17 @@ artifactory:
   database:
     ## Max connections to the database the main connection pool can consume
     #maxOpenConnections: 100
-    # Max connection to keep idle
+    ## Max connection to keep idle
     #maxIdleConnections: 10
-    # Connection pool manager. Either tomcat-jdbc or hikari
+    ## Connection pool manager. Either tomcat-jdbc or hikari
     #poolType: "tomcat-jdbc"
 
   ## Node NFS storage settings. Used in HA setup only!
   node:
-    # Data directory
+    ## Data directory
     #haDataDir:
 
-    # Backup directory
+    ## Backup directory
     #haBackupDir:
 
   ## Artifactory Tomcat connector customization on the Artifactory port
@@ -201,8 +204,7 @@ artifactory:
       #certificateKeyFile: "$JFROG_HOME/artifactory/var/etc/artifactory/security/ssl/server.key"
 
       ## Extra configuration for the HTTPS connector.
-      ## Example:
-      ## extraConfig: "SSLProtocol='TLSv1+TLSv1.1+TLSv1.2'"
+      ## For example extraConfig: "SSLProtocol='TLSv1+TLSv1.1+TLSv1.2'"
       #extraConfig: ""
 
 
@@ -242,9 +244,9 @@ access:
     #url: "jdbc:derby:<DERBY_DB_HOME_PLACE_HOLDER>;create=true"
     #driver: "org.apache.derby.jdbc.EmbeddedDriver"
     #maxOpenConnections: 100
-    # Max connection to keep idle
+    ## Max connection to keep idle
     #maxIdleConnections: 10
-    # Connection pool manager. Either tomcat-jdbc or hikari
+    ## Connection pool manager. Either tomcat-jdbc or hikari
     #poolType: "tomcat-jdbc"
 
   ## Tomcat connector customization on the Access port
@@ -261,6 +263,7 @@ access:
   env:
     #EXAMPLE_VAR: example-value
     #LD_LIBRARY_PATH: /usr/lib64
+  
   ## Skip creating default admin user on startup
   #startUpSkipDefaultAdmin: false
 
@@ -318,10 +321,10 @@ metadata:
 
       ## Specific internal packages to set with a different log level
       packages:
-        #common:
-        #  level: debug
-        #daos:
-        #  level: warn
+        common:
+          #level: debug
+        daos:
+          #level: warn
 
       ## Log rotation settings
       rotation:

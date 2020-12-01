@@ -1,8 +1,8 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <slave>
   <name>Slave</name>
-  <description>This is docker slave</description>
-  <remoteFS>/home/</remoteFS>
+  <description>ubuntu_slave</description>
+  <remoteFS>/home</remoteFS>
   <numExecutors>1</numExecutors>
   <mode>EXCLUSIVE</mode>
   <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
@@ -14,6 +14,6 @@
     </workDirSettings>
     <webSocket>false</webSocket>
   </launcher>
-  <label>dockerslave</label>
+  <label>ubuntu_slave</label>
   <nodeProperties/>
 </slave>

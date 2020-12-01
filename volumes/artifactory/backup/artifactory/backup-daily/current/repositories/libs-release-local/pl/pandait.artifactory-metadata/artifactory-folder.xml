@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>libs-release-local</repoKey>
+    <path>pl/pandait</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>pandait</name>
+  <created>1605380960737</created>
+  <lastModified>1605380960737</lastModified>
+  <additionalInfo>
+    <createdBy>maven</createdBy>
+    <modifiedBy>maven</modifiedBy>
+    <lastUpdated>1605380960737</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>
